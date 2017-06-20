@@ -1,0 +1,20 @@
+body {
+	background-color: rgb(181,255,255);
+
+	border: 25px solid rgba(0,0,0,0.5);
+	border-radius: 50px;
+}
+
+h1 {
+	color: rgb(81, 114, 114);
+
+	font-family: Impact;
+
+	text-align: center;
+}
+
+p {
+	text-align: center;
+	color: rgb(26, 95, 112);
+	font-size: 18px;
+}
