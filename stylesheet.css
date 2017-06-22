@@ -33,6 +33,10 @@ a {
 	width:600px;
 	margin:0 auto;
 
+	background-color: rgb(237,251,255);
+	border-radius:40px;
+	border: 5px solid rgb(237,251,255);
+
 	/*DEBUG ONLY*/
 	/*border: 1px solid red;*/
 }
