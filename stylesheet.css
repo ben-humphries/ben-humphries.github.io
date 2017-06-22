@@ -1,20 +1,38 @@
 body {
-	background-color: rgb(181,255,255);
+	background-color: rgb(186,219,219);
 
-	border: 25px solid rgba(0,0,0,0.5);
+	box-sizing: border-box;
+	border: 10px solid rgb(81, 114, 114);
 	border-radius: 50px;
+	border-style: double;
+
+	color: rgb(81, 114, 114);
+	font-family: Impact;
 }
 
 h1 {
-	color: rgb(81, 114, 114);
-
-	font-family: Impact;
-
+	font-size: 80px;
 	text-align: center;
+
+}
+
+h4{
+	text-align: center;
+	font-family: Palatino Linotype;
 }
 
 p {
-	text-align: center;
-	color: rgb(26, 95, 112);
-	font-size: 18px;
+	font-size: 16px;
+	font-family: Palatino Linotype;
+}
+a {
+	color: rgb(45,63,63);
+}
+
+.main {
+	width:600px;
+	margin:0 auto;
+
+	/*DEBUG ONLY*/
+	/*border: 1px solid red;*/
 }
