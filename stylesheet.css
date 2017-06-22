@@ -8,10 +8,17 @@ body {
 
 	color: rgb(81, 114, 114);
 	font-family: Impact;
+
+	overflow:scroll;
 }
 
 h1 {
 	font-size: 80px;
+	text-align: center;
+
+}
+h3{
+	font-size: 30px;
 	text-align: center;
 
 }
@@ -39,4 +46,17 @@ a {
 
 	/*DEBUG ONLY*/
 	/*border: 1px solid red;*/
+}
+
+.navbar {
+	width: 700px;
+	margin:0 auto;
+
+	border: 1px solid red;
+
+	display:table;
+}
+
+.currentPage {
+	color: rgb(78, 81, 109);
 }
