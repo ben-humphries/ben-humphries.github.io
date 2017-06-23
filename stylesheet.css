@@ -32,6 +32,10 @@ p {
 	font-size: 16px;
 	font-family: Palatino Linotype;
 }
+ol {
+	font-size: 16px;
+	font-family: Palatino Linotype;
+}
 a {
 	color: rgb(45,63,63);
 }
