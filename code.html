@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 
+<!-- CODE PAGE -->
+
+
 <html>
 
 	<head>
@@ -11,17 +14,19 @@
 
 	<body>
 
+		<h1>CODE</h1>
+
+		<div class="navbar">
+
+			<h3>–<a href="index.html">HOME</a>–<a href="projects.html">PROJECTS</a>–<a href="music.html">MUSIC</a>–<span class= "currentPage">CODE</span>–</h3>
+
+		</div>
+
 		<div class="main">
 
-			<h1>CODE</h1>
+			<h2 id="bit-masking">Bit Masking -- September 20 2017</h2>
 
-			<div class="navbar">
-
-				<h3>-- <a href="index.html">HOME</a> -- <a href="projects.html">PROJECTS</a> -- <a href="music.html">MUSIC</a> -- <span class= "currentPage">CODE</span> --</h3>
-
-			</div>
-
-			<h2>Bit Masking -- September 20 2017</h2>
+			<p class="permalink">ben-humphries.github.io/projects.html#bit-masking </p>
 
 		<p>
 			Recently I've been starting to program more in C and C++, and in doing so I've had to learn a lot about pointers, memory, and general lower-level concepts that I haven't had to deal with previously. When optimizing my Conway's Game of Life program that I'm currently working on in C++, I decided to use bits to store the state of the cells, instead of booleans or ints. This was a great choice, as I've implemented it now and it is more efficient, but in the beginning I struggled to understand how to write to bits and how to use them.
@@ -113,11 +118,16 @@
 
 				int k = x + y * numTilesX;			<br/><br/>
 
-
-				if ((cellGrid[k / 8] & 1 << (k % 8)) != 0)			<br/>
-					return 1;<br/>
-				else<br/>
-					return 0;<br/>
+				<div class="code">
+<pre>
+if ((cellGrid[k / 8] & 1 << (k % 8)) != 0){
+	return 1;
+}
+else{
+	return 0;
+}
+</pre>
+				</div>
 
 			</p>
 

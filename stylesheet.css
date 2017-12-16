@@ -1,15 +1,13 @@
 body {
-	background-color: rgb(186,219,219);
+	background-color: #191919;
 
 	box-sizing: border-box;
-	border: 10px solid rgb(81, 114, 114);
-	border-radius: 50px;
-	border-style: double;
 
-	color: rgb(81, 114, 114);
-	font-family: Impact;
+	color: #ffffff;
+	font-family: monospace;
 
-	overflow:scroll;
+	overflow-y:scroll;
+	overflow-x: auto;
 }
 
 h1 {
@@ -18,47 +16,65 @@ h1 {
 
 }
 h3{
-	font-size: 30px;
+	font-size: 60px;
 	text-align: center;
 
 }
 
 h4{
 	text-align: center;
-	font-family: Palatino Linotype;
+	font-family: monospace;
 }
 
 p {
 	font-size: 16px;
-	font-family: Palatino Linotype;
+	font-family: monospace;
 }
 ol {
 	font-size: 16px;
-	font-family: Palatino Linotype;
+	font-family: monospace;
 }
-a {
-	color: rgb(45,63,63);
+a{
+	color: #2eba45;
 }
 
 .main {
-	width:800px;
+	width:100%;
+	max-width: 900px;
 	margin:0 auto;
+	margin-top:15px;
 
-	background-color: rgb(237,251,255);
-	border-radius:40px;
-	border: 50px solid rgb(237,251,255);
+	border-radius:5px;
 
 	/*DEBUG ONLY*/
 	/*border: 1px solid red;*/
 }
 
 .navbar {
-	width: 700px;
+	width: 100%;
 	margin:0 auto;
-
-	display:table;
+	font-size: 16px;
 }
 
 .currentPage {
-	color: rgb(78, 81, 109);
+	color: #1b7229;
+}
+
+.image{
+	height: auto;
+	width: 100%;
+	display:block;
+	margin:auto;
+}
+
+.code {
+	background-color: #4f4e4e;
+	max-height: 300px;
+	overflow-y: scroll;
+}
+
+.permalink {
+	font-style: italic;
+	font-size: 11px;
+	color: #f7f7f7;
 }
