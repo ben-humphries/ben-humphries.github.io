@@ -10,6 +10,8 @@
 		<link rel="stylesheet" href="stylesheet.css"/>
 		<title>Code</title>
 		<link rel="icon" href="favicon.png">
+		<script type="text/javascript" src="js/quickaccess.js"></script>
+
 
 	</head>
 
@@ -23,7 +25,16 @@
 
 		</div>
 
-		<div class="main">
+		<div class="dropdown">
+			<div class="quickaccess">QUICK ACCESS</div>
+			<div id="dropdown" class="dropdown-list">
+				<input type="text" placeholder="Search..." id="dropdownSearch" onkeyup="filterSearch()"></input>
+			</div>
+		</div>
+
+		<div class="main" id="main">
+
+		<div class="post">
 
 			<h2 id="bit-masking">Bit Masking -- September 20 2017</h2>
 
@@ -134,6 +145,8 @@ else{
 
 
 		</p>
+
+		</div>
 
 		</div>
 

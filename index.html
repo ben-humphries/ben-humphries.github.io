@@ -9,6 +9,8 @@
 		<link rel="stylesheet" href="stylesheet.css"/>
 		<title>Home</title>
 		<link rel="icon" href="favicon.png">
+		<script type="text/javascript" src="js/quickaccess.js"></script>
+
 
 	</head>
 
@@ -23,7 +25,6 @@
 		</div>
 
 
-		<div class="main">
 
 
 				<h3 style="text-align:center">ABOUT ME</h3>
@@ -38,6 +39,16 @@
 
 				<br/>
 
+				<div class="dropdown">
+					<div class="quickaccess">QUICK ACCESS</div>
+					<div id="dropdown" class="dropdown-list">
+						<input type="text" placeholder="Search..." id="dropdownSearch" onkeyup="filterSearch()"></input>
+					</div>
+				</div>
+
+				<div class="main" id="main">
+
+				<div class="post">
 				<h2 id="build-complete"> Build Complete! -- August 11 2017</h2>
 				<p class="permalink">ben-humphries.github.io/index.html#build-complete </p>
 
@@ -67,6 +78,8 @@
 				</p>
 
 				<br/>
+				</div>
+				<div class="post">
 
 				<h2 id="ethereum-mining"> Can We Cut It Out With The Ethereum Mining? -- July 2 2017</h2>
 
@@ -85,6 +98,7 @@
 					<br/><br/>
 					Cut it out with the Ethereum mining!
 				</p>
+				</div>
 
 
 		</div>

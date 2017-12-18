@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="stylesheet.css"/>
 		<title>Music</title>
 		<link rel="icon" href="favicon.png">
+		<script type="text/javascript" src="js/quickaccess.js"></script>
 
 
 	</head>
@@ -24,10 +25,17 @@
 
 		</div>
 
-		<div class="main">
+		<div class="dropdown">
+			<div class="quickaccess">QUICK ACCESS</div>
+			<div id="dropdown" class="dropdown-list">
+				<input type="text" placeholder="Search..." id="dropdownSearch" onkeyup="filterSearch()"></input>
+			</div>
+		</div>
+
+		<div class="main" id="main">
 
 			<p style="text-align:center">
-				Nothing's here yet! Come back later when I've finished the website!
+				Nothing's here yet! Come back later when I've posted some music!
 			</p>
 
 		</div>
