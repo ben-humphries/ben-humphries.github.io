@@ -127,11 +127,11 @@
 
 			So, if I wanted to store information within a bit (usually using the unsigned int/char data type) I could access it by reading:			<br/><br/>
 
-
-				int k = x + y * numTilesX;			<br/><br/>
-
 				<div class="code">
+
 <pre>
+int k = x + y * numTilesX;
+
 if ((cellGrid[k / 8] & 1 << (k % 8)) != 0){
 	return 1;
 }
