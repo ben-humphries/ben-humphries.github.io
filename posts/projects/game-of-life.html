@@ -1,0 +1,38 @@
+<div class="post">
+
+	<h2 id="game-of-life">Conway's Game of Life -- June 21 2017</h2>
+
+	<p class="permalink">ben-humphries.github.io/projects.html#game-of-life</p>
+
+	<p>
+		I've always been fascinated by <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a>, a simple "game" in a grid that is dictated by four basic rules:
+
+		<ol>
+			<li>Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.</li>
+
+			<li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+
+			<li>Any live cell with more than three live neighbours dies, as if by overpopulation.</li>
+
+			<li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+		</ol>
+
+		<img style="max-width:600px;" src="Projects/images/game-of-life.PNG" class="image" alt="Screenshot of the Game of Life program in Processing"/>
+
+		<p>
+		I decided to recreate my own version of Game of Life to tinker with, so I used Processing (which gave me pretty simple graphics control) to make it. So far the project consists of an on/off toggle and the ability to draw alive and dead cells. Soon I hope to implement a save feature (using .csv files) and maybe even adjustable variables to change the rules of the game. 
+
+		<br/><br/>
+
+		<b>Edit:</b> The save and open feature is now implemented! I did this by saving the grid as a .csv file, plus adding a bunch of tedious UI and string splicing. After adjustable variables I will finally have a good program to tinker with for hours on end!
+
+		<br/><br/>
+
+		<img style="max-width:600px;" class="image" src="Projects/images/glidergun.PNG" alt="Screenshot of the Glider Gun Preset in Game of Life"/>
+
+		<br/><br/>
+
+		<a href="https://github.com/ben-humphries/Conways-Game-Of-Life">Here</a> is a link to the github repository for the project.
+
+	</p>
+</div>
