@@ -13,7 +13,8 @@
 <script>
       function load_home(){
      	var rawFile = new XMLHttpRequest();
-	    rawFile.open("GET", "https://ben-humphries.github.io/projects.html");
+     	console.log("here");
+	    rawFile.open("GET", "projects.html");
 	    rawFile.onreadystatechange = function ()
 	    {
 	        if(rawFile.readyState === 4)
