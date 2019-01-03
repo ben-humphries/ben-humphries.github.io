@@ -5,7 +5,7 @@ function append_post(url){
     rawFile.onreadystatechange = function ()
     {
     }
-    rawfile.onload = function () {
+    rawFile.onload = function () {
         if(rawFile.readyState === 4)
         {
             if(rawFile.status === 200 || rawFile.status == 0)
