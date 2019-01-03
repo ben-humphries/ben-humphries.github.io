@@ -1,11 +1,10 @@
 function append_post(url){
  	var rawFile = new XMLHttpRequest();
- 	console.log("here");
     rawFile.open("GET", url);
     rawFile.onreadystatechange = function ()
     {
         while(rawFile.readyState !== 4){
-
+            console.log("loading " + url);
         }
         if(rawFile.status === 200 || rawFile.status == 0)
         {
@@ -13,6 +12,7 @@ function append_post(url){
             div = document.createElement('div');
             div.innerHTML = allText;
             document.getElementById("posts").appendChild(div);
+            console.log("LOADED " + url);
         }
     }
     rawFile.send(null);
