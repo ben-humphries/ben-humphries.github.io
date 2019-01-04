@@ -11,6 +11,7 @@ function append_post(url){
                 div = document.createElement('div');
                 div.innerHTML = allText;
                 document.getElementById(url).appendChild(div);
+                //dummy commit
             }
         }
     }
