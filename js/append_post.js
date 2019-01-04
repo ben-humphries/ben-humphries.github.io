@@ -10,7 +10,7 @@ function append_post(url){
                 var allText = rawFile.responseText;
                 div = document.createElement('div');
                 div.innerHTML = allText;
-                document.getElementById(urls_list[i]).appendChild(div);
+                document.getElementById(url).appendChild(div);
             }
         }
     }
