@@ -1,0 +1,115 @@
+<link rel="stylesheet" href="https://ben-humphries.github.io/stylesheet.css"/>
+<div class="post">
+
+	<h2 id="bit-masking">Bit Masking -- September 20 2017</h2>
+
+	<p class="permalink">ben-humphries.github.io/posts/code/bit-masking </p>
+
+	<p>
+	Recently I've been starting to program more in C and C++, and in doing so I've had to learn a lot about pointers, memory, and general lower-level concepts that I haven't had to deal with previously. When optimizing my Conway's Game of Life program that I'm currently working on in C++, I decided to use bits to store the state of the cells, instead of booleans or ints. This was a great choice, as I've implemented it now and it is more efficient, but in the beginning I struggled to understand how to write to bits and how to use them.
+
+	<br/><br/>
+
+	<h4>Bit Masking</h4>
+	<p>
+
+	Bit masking is the process of changing a bit from one value to another, and bitwise operations are the operations that you use to manipulate the bits. Here are the common bitwise operators featured in most languages:
+
+	<br/><br/>
+	<b>The OR operator:</b>
+	<br/><br/>
+
+	The OR operator is usually denoted by this symbol: '|'. When passed two bits, it will return 1 if either or both of the bits is 1, and 0 if neither are 1 (both are 0). For example,
+
+	<br/><br/>
+	0 | 1 = 1
+	<br/><br/>
+	1 | 0 = 1
+	<br/><br/>
+	1 | 1 = 1
+	<br/><br/>
+	0 | 0 = 0
+
+	<br/><br/>
+	<b>The AND operator:</b>
+	<br/><br/>
+
+	The AND operator is denoted by this symbol: '&'. When passed two bits, it will return 1 if both bits are 1, and 0 otherwise. For example,
+
+	<br/><br/>
+	0 & 1 = 0
+	<br/><br/>
+	1 & 0 = 0
+	<br/><br/>
+	1 & 1 = 1
+	<br/><br/>
+	0 & 0 = 0
+
+	<br/><br/>
+	<b>The XOR operator:</b>
+	<br/><br/>
+
+	The XOR operator is denoted by this symbol: '^'. It is very similar to the OR operator, but excludes the case where both bits are 1. For example,
+
+	<br/><br/>
+	0 ^ 1 = 1
+	<br/><br/>
+	1 ^ 0 = 1
+	<br/><br/>
+	1 ^ 1 = 0
+	<br/><br/>
+	0 ^ 0 = 0
+
+	<br/><br/>
+	These bitwise operations aren't practically used with just one bit, however. Most often they are used to manipulate all of the bits in a byte, which is comprised of 8 bits. The operators affect all of the bits, but they are still compared individually. For example, 00101101 & 10111001 = 00101001. The next two bitwise operations are only useful with multiple bits.
+
+	<br/><br/>
+	<b>The Left Bit-Shift operator:</b>
+	<br/><br/>
+
+	The left bit-shift operator is denoted by this symbol: '<<'. It will shift the values of all of the bits left by the number placed after it. The values <u>do not</u> wrap. Instead, any value unaccounted for in the original value will be replaced with a zero. For example,
+
+	<br/><br/>
+	01010101 << 1 = 10101010
+	<br/><br/>
+	01010101 << 10 = 00000000
+
+	<br/><br/>
+	<b>The Right Bit-Shift operator:</b>
+	<br/><br/>
+
+	The right bit-shift operator is denoted by this symbol: '>>'. It is essentially the same as the left bit-shift, but it goes the other way. For example,
+
+	<br/><br/>
+	01010101 >> 1 = 00101010
+	<br/><br/>
+	01010101 >> 10 = 00000000
+
+	<br/><br/>
+	<br/><br/>
+	<br/><br/>
+	<br/><br/>
+
+	So, if I wanted to store information within a bit (usually using the unsigned int/char data type) I could access it by reading:			<br/><br/>
+
+	<div class="code">
+
+<pre>
+int k = x + y * numTilesX;
+
+if ((cellGrid[k / 8] & 1 << (k % 8)) != 0){
+	return 1;
+}
+else{
+	return 0;
+}
+</pre>
+
+	</div>
+
+	</p>
+
+
+	</p>
+
+</div>

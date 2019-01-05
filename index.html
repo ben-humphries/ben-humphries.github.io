@@ -10,6 +10,7 @@
 		<title>Home</title>
 		<link rel="icon" href="favicon.png">
 		<script type="text/javascript" src="js/quickaccess.js"></script>
+		<script type="text/javascript" src="js/append_post.js"></script>
 
 
 	</head>
@@ -24,115 +25,32 @@
 
 		</div>
 
+		<h3 style="text-align:center">ABOUT ME</h3>
+		<div class="main" id="main">
+		<p style="text-align:center">
+			I'm a senior in high school who enjoys programming, making music, gaming, swimming, and a bunch of other stuff. This website serves as a way to document all of my programming and music projects while also teaching me HTML and CSS.
+		</p>
+		</div>
 
+		<br/>
 
+		<h3 style="text-align:center">BLOG</h3>
 
-				<h3 style="text-align:center">ABOUT ME</h3>
-				<div class="main" id="main">
-				<p style="text-align:center">
-					I'm a senior in high school who enjoys programming, making music, gaming, swimming, and a bunch of other stuff. This website serves as a way to document all of my programming and music projects while also teaching me HTML and CSS.
-				</p>
-				</div>
+		<br/>
 
-				<br/>
+		<div class="dropdown">
+			<div class="quickaccess">QUICK ACCESS</div>
+			<div id="dropdown" class="dropdown-list">
+				<input type="text" placeholder="Search..." id="dropdownSearch" onkeyup="filterSearch()"></input>
+			</div>
+		</div>
 
-				<h3 style="text-align:center">BLOG</h3>
+		<div class="main" id="main">
 
-				<br/>
+			<div id="posts"></div> <!-- posts will be appended to this div -->
 
-				<div class="dropdown">
-					<div class="quickaccess">QUICK ACCESS</div>
-					<div id="dropdown" class="dropdown-list">
-						<input type="text" placeholder="Search..." id="dropdownSearch" onkeyup="filterSearch()"></input>
-					</div>
-				</div>
-
-				<div class="main" id="main">
-				<div class="post">
-				<h2 id="gallium-os"> Hello from GalliumOS -- January 1 2018</h2>
-				<p class="permalink">ben-humphries.github.io/index.html#gallium-os </p>
-
-				<p>
-				  For Christmas this year, I asked for a small, cheap, Acer Chromebook to experiment with Linux on, and a few days ago, I started tinkering. 
-					<br/>
-					<br/>
-					I started by figuring out how to enable developer mode on Chromebooks. It's pretty simple -- just press Ctrl+D on startup. I'm feeling like a hacker already at this point.
-					<br/>
-					<br/>
-					Next, I had to install SeaBIOS, a BIOS made by John Lewis for Chromebooks that allow them to install an operating system other than ChromeOS. This took a couple of tries, and required opening up the computer and removing the "write-protect screw" which took a while to find. After trying to install SeaBIOS multiple times, I realized I was no longer in developer mode since I had to power off the computer to take the screw out, and once I fixed that, SeaBIOS was installed.
-					<br/>
-					<br/>
-					"Now, for the fun part," I thought. I finally got to install the operating system and I would no longer have to deal with that weird ChromeOS terminal. So, I booted up my PC and loaded Ubuntu onto a USB stick using Rufus, a stick writer program that the Ubuntu website recommends. I opened the laptop, booted from the USB through SeaBIOS, and... error.
-					<br/>
-					<br/>
-					I searched around for the error for about 15 minutes before deciding to try Linux Mint instead. "Mint is better anyways," I told myself (which it is, in my opinion, but that's not the point). The point was, I was quick to try something different rather than just fix my problem. Well, it initially seemed to work, because I actually was able to boot into Linux Mint from the USB stick. I started the installer, and all seemed well, until I realized something: the keyboard wasn't working.
-					<br/>
-					<br/>
-					After trying to fix this for much, much longer than any of my other problems, I decided to try an older version. "Hey! The keyboard works! Oh, the trackpad doesn't though..." After another few hours of troubleshooting, I was ready to give up for the night. So, I made a post on reddit asking for some help before going to see a movie with some friends.
-					<br/>
-					<br/>
-					When I got home at around midnight, I saw that I had a reply to my post! "Sounds like GalliumOS is what you're looking for." It was. GalliumOS is a version of Linux that is based on Xubuntu with support for most Chromebook hardware! Bingo! I quickly put in on my USB stick, installed it, and jumped with glee when both the trackpad and the keyboard worked.
-					<br/>
-					<br/>
-					So now I have a cheap little laptop with Linux on it to mess around with, program on, and surf the web on. In fact, I'm writing this post from my Chromebook right now. All I need to complete this thing is a good sticker to cover up the big "Google Chrome" symbol on the front!
-					
-				</p>
-
-				<br/>
-				</div>
-
-				<div class="post">
-				<h2 id="build-complete"> Build Complete! -- August 11 2017</h2>
-				<p class="permalink">ben-humphries.github.io/index.html#build-complete </p>
-
-				<p>
-					I think I've finally finished everything. I had a lot of trouble intially finding parts for the new PC, especially the graphics card, but unfortunately my bad luck didn't end when all of my parts were ordered. 
-					<br/>
-					<br/>
-					See, a few weeks ago, I was ready to build. I had everything layed out on my table, including my old PC, that I was ready to gut and transfer to my new case along with some shiny new parts. After gutting my entire PC (except for the I/O panel, which I annoyingly realized after I had already reboxed my old motherboard), I started assembling the new one. Except, the PSU was about a millimeter too big for the new case. Now I was PC-less, and that lasted about two weeks. Great start.
-					<br/>
-					<br/>
-					Next, I grabbed a new PSU from the local computer shop (important to support local business, plus I didn't want to wait for a delivery) and finally assembled my new computer about two weeks after the initial attempt due to prior commitments. Aside from the problems that come with buying a cheap case, the build itself actually went pretty smoothly, aside from accidentally applying way too much thermal compound the first time around.
-					<br/>
-					<br/>
-					Upon startup, however, more problems arose. Initially I was excited because it turned on, that's always the first step. But then, my graphics card didn't have enough power. No onboard graphics, so while I waited another week for a 2x6-pin to 8-pin adapter, I was once again PC-less.
-					<br/>
-					<br/>
-					Aha! Everything is finally booting correctly! I got into the BIOS, and, to my surprise, everything was being detected and was working properly! At least, that's what it looked like. My CPU fan wasn't spinning and my second hard drive wasn't being detected. After some messing around inside the case, the CPU fan was now working, and I just opted to go ahead and install Windows 10 and figure out the hard drive thing later (Windows 10 was going on the SSD).
-					<br/>
-					<br/>
-					Shortly after I had my computer up and running, I figured out the hard drive problem (although I don't even remember what it was now) and I started moving files over, setting up applications, and redownloading everything from my other computer (scrapped my old HDD).
-					<br/>
-					<br/>
-					But only yesterday did I finally activate Windows 10 and gain full access to its features, along with finally cloning this website's repository on this PC, so, now I can officially say...
-					<br/>
-					<br/>
-					Build complete!
-				</p>
-
-				<br/>
-				</div>
-				<div class="post">
-
-				<h2 id="ethereum-mining"> Can We Cut It Out With The Ethereum Mining? -- July 2 2017</h2>
-
-				<p class="permalink">ben-humphries.github.io/index.html#ethereum-mining </p>
-
-				<p>
-					I've been looking to upgrade my PC recently, and possibly the most important part of my upgrade will be the graphics card. I've sorted out pretty much all of the parts I want and am ready to order them, such as the case, motherboard, and SSD/HDD, but the graphics card is giving me a lot of trouble.
-					<br/><br/>
-					Graphics card prices are inflated, they're on backorder, out of stock... All I see when I go to Newegg is and Auto-Notify button. 
-					<br/><br/>
-					Now I'm faced with a dilemma: Do I stalk webpages all day in the hopes that eventually a GPU will come in stock, and then buy it for a marked-up price? Or do I wait until the prices go back down and the demand is normal again? 
-					<br/><br/>
-					But what's the problem in the first place? Why the influx of GTX 1060 and 1070 sales? Ethereum. You may have heard of it. It's the latest and greatest crypto-currency (which is the same type of currency as the wider-known Bitcoin). Ethereum mining algorithms are different from Bitcoin's in that they are most efficient on GPUs, while Bitcoin's algorithms have had their go with GPUs and now have specific "mining" cards that are cheaper and only meant for mining. Anyways, miners are gobbling up 1060s and 1070s in an effort to cash in on Ethereum's up and coming value, which means less for me, and a lot of other PC builders. 
-					<br/><br/>
-					A lot of forums I've read have said that in a few months, Ethereum algorithms will probably me more efficient on other cards, but at that point I'll be back in school and probably won't have enough time to rebuild the PC. My temporary solution will probably be to upgrade everything but the GPU and do that later when I actually can, as swapping out a GPU shouldn't take more than a few minutes. But dang...
-					<br/><br/>
-					Cut it out with the Ethereum mining!
-				</p>
-				</div>
-
+			<body onload="append_all_posts('posts/blog/gallium-os.html,																																					posts/blog/build-complete.html, 																																			posts/blog/ethereum-mining.html')">
+			</body>
 
 		</div>
 
